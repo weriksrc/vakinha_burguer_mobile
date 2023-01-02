@@ -4,14 +4,14 @@ class ProductModel {
   int id;
   String name;
   String description;
-  double prince;
+  double price;
   String image;
 
   ProductModel({
     required this.id,
     required this.name,
     required this.description,
-    required this.prince,
+    required this.price,
     required this.image,
   });
 
@@ -20,7 +20,7 @@ class ProductModel {
       'id': id,
       'name': name,
       'description': description,
-      'prince': prince,
+      'price': price,
       'image': image,
     };
   }
@@ -30,7 +30,7 @@ class ProductModel {
       id: map['id']?.toInt() ?? 0,
       name: map['name'] ?? '',
       description: map['description'] ?? '',
-      prince: map['prince']?.toDouble() ?? 0.0,
+      price: map['price']?.toDouble() ?? 0.0,
       image: map['image'] ?? '',
     );
   }
